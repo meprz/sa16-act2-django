@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Greatest Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    <style>
+      nav, body {
+        background-color: teal;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+      
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+      
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+    
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'my_work' %}">My Work</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section class="biography">
+          <h1>Biography</h1>
+          <ul>
+              <li>
+                  Experienced developer with over a millennia (that's over a thousand years -- wow!)
+                  of expertise in every field imaginable
+              </li>
+              <li>
+                  Proficient in pretty much any and every front-end technology you can think of -- except that one, 
+                  because that one doesn't matter. Yeah, sorry.
+              </li>
+              <li>
+                  Strong problem-solving abilities (how else could I live for so long?) and a keen eye for detail
+              </li>
+          </ul>
+      </section>
+
+      <section class="image">
+      </section>
+
+      <section class="education">
+          <h2>Educational Background</h2>
+          <ul>
+              <li>
+                  Attended lectures at the University of Oxford in England during the Middle Ages 
+                  (12th century onwards -- believe me, it was less than ideal)
+              </li>
+              <li>
+                  Studied at Plato's Academy in Athens, Greece, during the Classical period 
+                  (4th century BCE -- quite a nice fellow that Plato gentleman)
+              </li>
+              <li>
+                  Earned a degree in Time Travel Physics from the 22nd Century Institute of Temporal Mechanics 
+                  (don't ask me about this one, I signed an NDA)
+              </li>
+          </ul>
+      </section>
+
+      <section class="image">
+      </section>
+
+      <section class="skills">
+          <h3>Skills</h3>
+          <ul>
+              <li>
+                  Developed the 1st-ever JavaScript library that reads users' minds (Professor X style) which determines what they want to search for before they even start typing.
+              </li>
+              <li>
+                  Created a framework for CSS that predicts the future and adapts the styling based on upcoming trends, which ensures your site/app remains pretty(!) forever (who wouldn't want this).
+              </li>
+              <li>
+                  Invented a server architecture which is so advanced it eliminates the need for physical OR virtual servers and runs entirely on cosmic background radiation (I heard about cosmic background radition in The Three-Body Problem, so you know you can trust that I know all there is to know about it).
+              </li>
+          </ul>
+      </section>
+
+      <section class="image">
+      </section>
+
+      <section class="achievements">
+          <h4>Achievements</h4>
+          <ul>
+              <li>2030 FIFA World Cup winner! (What does this have to do with web dev? Who cares! Football is the world's sport.)</li>
+              <li>Received the Pulitzer Prize for Code! (To be honest, I didn't even know that this existed. Wait... it does exist, right? Anyways...) They recognized me for writing the world's most poetic code, which has been published/studied worldwide, naturally.</li>
+              <li>Receieved a neato swag bag for attending a developer conference. (Hey, they don't give those out to just anyone!)</li>
+          </ul>
+      </section>
+
+      <section class="image">
+      </section>
+    </div>
+  </body>
+</html>
